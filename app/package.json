@@ -1,0 +1,20 @@
+{
+    "name": "puppeteer-uservice",
+    "version": "1.0.0",
+    "description": "Easy to use puppetter & express microservice.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [
+        "puppeteer",
+        "expressjs",
+        "nodejs"
+    ],
+    "author": "Michael-xT",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "puppeteer": "^19.8.5"
+    }
+}

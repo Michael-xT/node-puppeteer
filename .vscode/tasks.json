@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Docker Image",
+            "type": "shell",
+            "command": "docker build  . -t node-pupp",
+            "group": "build"
+        },
+        {
+            "label": "Run Docker Image",
+            "type": "shell",
+            "command": "docker run -it -d --rm -p 3000:3000 node-pupp",
+            "group": "test"
+        }
+    ]
+}
