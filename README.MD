@@ -40,9 +40,9 @@ version: '3'
 <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html">(more about that here)</a>
 
 ```sh
-cf push node-pupp --docker-image ghcr.io/michael-xt/node-puppeteer:master
+cf push node-pupp --docker-image ghcr.io/michael-xt/node-puppeteer:master -k 1536M
 ```
-
+(-k 1536M) because it needs more than 1GB of disk size.
 
 #
 
