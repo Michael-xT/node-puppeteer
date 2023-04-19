@@ -19,7 +19,7 @@ In some environments, like Cloud Foundry, I could not install in a easy way `apt
 To get started just run the Docker image as follows:
 
 ```sh
-docker run -d -p 3000:3000 --name node-pupp ghcr.io/michael-xt/node-puppeteer:main
+docker run -d -p 3000:3000 --name node-pupp ghcr.io/michael-xt/node-puppeteer:master
 ```
 
 ## 2) Docker Compose:
@@ -28,7 +28,7 @@ docker run -d -p 3000:3000 --name node-pupp ghcr.io/michael-xt/node-puppeteer:ma
 services:
   nodepupp:
     container_name: node-pupp
-    image: ghcr.io/michael-xt/node-puppeteer:main
+    image: ghcr.io/michael-xt/node-puppeteer:master
     ports:
       - "3000:3000"
     restart: always
@@ -40,7 +40,7 @@ version: '3'
 <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html">(more about that here)</a>
 
 ```sh
-cf push node-pupp --docker-image ghcr.io/michael-xt/node-puppeteer:main
+cf push node-pupp --docker-image ghcr.io/michael-xt/node-puppeteer:master
 ```
 
 
