@@ -35,6 +35,15 @@ services:
 version: '3'
 ```
 
+## 3) CloudFoundry:
+
+<a href="https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html">(more about that here)</a>
+
+```sh
+cf push node-pupp --docker-image ghcr.io/michael-xt/node-puppeteer:main
+```
+
+
 #
 
 # API
